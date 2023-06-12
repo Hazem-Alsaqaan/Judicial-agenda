@@ -1,0 +1,17 @@
+section.login {
+    background-color: #e8ecf8;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 15px 15px;
+    padding: 20px 0px;
+    position: relative;
+}
+section.login form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}

@@ -1,0 +1,79 @@
+.get-cases {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.get-cases table{
+    width: 100%;
+}
+.get-cases table thead tr {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    border-radius: 10px 10px;
+    background-color: #f1f5f9;
+    box-shadow: 0px 5px 12px -2px #ccc;
+    margin: 10px 0px;
+}
+.get-cases table thead tr th {
+    color: var(--blue);
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.get-cases table tbody tr {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    border-radius: 10px 10px;
+    border: 2px solid white;
+    box-shadow: 0px 0px 4px 0px #ccc;
+    margin-bottom: 5px;
+    background-color: rgb(247, 247, 247);
+}
+.get-cases table tbody tr td {
+    padding: 5px;
+    color: var(--darkGray);
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.get-cases table thead tr th.two-col,
+.get-cases table tbody tr td.two-col {
+    grid-column: span 2;
+}
+/* button */
+button.btn-edit{
+    background-color: #e9f0ff;
+    color: #2f66df;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 0px 7px 7px 0px;
+    border: none;
+    font-weight: 500;
+}
+button.btn-delete{
+    background-color: #fde7e7;
+    color: #fd9797;
+    font-size: 12px;
+    border-radius: 7px 0px 0px 7px;
+    padding: 5px;
+    border: none;
+    font-weight: 500;
+}
+
+@media(max-width: 671px){
+    .get-cases table thead tr th,
+    .get-cases table tbody tr td{
+        font-size: 10px;
+    }
+    .btn-div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

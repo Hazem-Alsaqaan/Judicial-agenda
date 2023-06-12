@@ -1,0 +1,124 @@
+.main-page {
+    background-color: #a8b1ff;
+    padding: 25px;
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.main-page::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 25px;
+    left: 25px;
+    background-color: #cde4f6;
+    filter: blur(25px);
+    border-radius: 50%;
+    animation-name: circleMove;
+    animation-duration: 12s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    z-index: 0;
+}
+
+.main-page-content{
+    background-color: #e8ecf8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px;
+    border: 2px solid #f1f5f9;
+    overflow: hidden;
+    padding: 25px 25px 80px;
+}
+
+.main-page-picture div{
+    position: relative;
+}
+.main-page-picture div.text h1 {
+    color: #4777ff;
+    padding-top: 50px;
+    font-weight: 700;
+    font-style: italic;
+}
+.main-page-picture div.text p {
+    color: var(--gray);
+    font-weight: 700;
+}
+.main-page .main-page-picture img{
+    width: 250px;
+    animation-name: moveX;
+    animation-duration: 7s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+}
+.main-page .main-page-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0px 25px;
+}
+.main-page .footer-text{
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--gray);
+    width: 100%;
+    text-align: center;
+}
+
+@keyframes moveX {
+    form{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(50px);
+    }
+}
+/* login & register form */
+
+input.user-form{
+    border: none;
+    border-radius: 8px 8px;
+    margin: 10px;
+    padding: 10px 15px;
+    background-color: #dfe6f9;
+    font-size: 14px;
+}
+input.user-form:focus{
+    outline: none;
+}
+.btn-form {
+    background-color: #3161f1;
+    color: white;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 8px 8px;
+    transition-duration: .5s;
+    margin-top: 20px;
+    box-shadow: 0px 5px 12px rgb(74, 104, 211);
+    width: 50%;
+}
+.btn-form:hover {
+    background-color: #385aee;
+}
+@keyframes circleMove {
+    0% {
+        left: 15%;
+        top: 15%;
+    }
+    50%{
+        left: 25%;
+        top: 30%;
+    }
+    100%{
+        left: 35%;
+        top: 15%;
+    }
+}
+.btn-primary {
+    position: relative;
+}

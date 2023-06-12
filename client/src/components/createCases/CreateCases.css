@@ -1,0 +1,108 @@
+.create-page{
+    direction: rtl;
+    background-image: linear-gradient(350deg, #e8ecf8,#d6ddf3, #e8ecf8);
+    min-height: 100vh;
+}
+.creating{
+    padding: 50px 25px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+.creating .replay {
+    color: var(--blue);
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    cursor: pointer;
+    direction: ltr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.creating .replay span{
+    font-size: 16px;
+    padding: 0px 5px;
+    font-weight: 500;
+    color: var(--blue);
+}
+.creating::before{
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    top: 25px;
+    left: 25px;
+    background-color: #92b7d4;
+    filter: blur(25px);
+    border-radius: 50%;
+    animation-name: circleMove;
+    animation-duration: 12s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    z-index: 0;
+}
+.create-cases {
+    position: relative;
+}
+.create-cases div.bg-icone{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0%;
+    z-index: 0;
+    overflow: hidden;
+}
+.create-cases div.bg-icone svg{
+    width: 100%;
+    height: 100%;
+}
+/* form */
+.create-form {
+    position: relative;
+    z-index: 5;
+}
+.create-form div{
+    position: relative;
+    z-index: 5;
+    width: 300px;
+}
+.create-form input.cases-form{
+    padding: 5px 40px 5px 5px;
+    width: 100%;
+    border: none;
+    border-radius: 8px 8px;
+    margin: 5px;
+    background-color: #dfe6f9;
+    font-size: 12px;
+}
+.create-form input.cases-form:focus{
+    outline: none;
+}
+.create-form label {
+    color: #768994;
+    font-weight: bold;
+}
+/* form svg */
+.create-form svg {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    color: var(--blue2);
+}
+.btn-creating{
+    background-color: #3161f1;
+    color: white;
+    padding: 7px 15px;
+    border: none;
+    border-radius: 8px 8px;
+    transition-duration: .5s;
+    margin-top: 20px;
+    box-shadow: 0px 5px 12px rgb(74, 104, 211);
+    width: 100%;
+    position: relative;
+}

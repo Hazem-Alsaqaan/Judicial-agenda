@@ -1,0 +1,39 @@
+section.center-side {
+    background-color: var(--light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px 5px;
+    grid-area: center;
+}
+.years {
+    margin: 26px 0px;
+    display: flex;
+    align-items: center;
+}
+.years h6 {
+    padding: 0px 15px;
+    margin-bottom: 1.5px;
+}
+.center-side svg {
+    color: var(--blue-light);
+    cursor: pointer;
+}
+.monthes li {
+    padding: 10px;
+    cursor: pointer;
+    color: var(--gray2);
+    transition-duration: .3s;
+}
+.monthes li.near {
+    color: var(--gray);
+}
+.monthes li.active,
+.monthes li:hover{
+    font-weight: bold;
+    color: var(--black);
+}
+ul.monthes svg {
+    color: var(--blue);
+}
